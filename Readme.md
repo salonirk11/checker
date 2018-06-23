@@ -18,11 +18,11 @@ You need to produce a console program, who’s command line looks something like
 
 The checker checks the listed files (if none are specified it reads standard input) and produces output of the form:
 
-`article1.txt,2 errors
-
+```
+article1.txt,2 errors
 article1.text,7,thre,perhaps thre is a reaction
-
-article1.text,12,phiton,low-energy phiton is emitted`
+article1.text,12,phiton,low-energy phiton is emitted
+```
 
 
 Your may also need XML output later on, but you should get the CSV format above working first. There were a lot of submissions, and checking a document should not take more than two or three times as long as listing it on the screen would do.
@@ -31,14 +31,15 @@ Your may also need XML output later on, but you should get the CSV format above 
 
 ### Directory Structure
 
-`scheck`
-`|--> bin`
-`|--> data`
-`|--> doc`
-`|--> inc`
-`|--> src`
-`|--> tests`
-
+```
+scheck
+|--> bin
+|--> data
+|--> doc
+|--> inc
+|--> src
+|--> tests
+```
 
 
 * bin : checker executables are stored here
