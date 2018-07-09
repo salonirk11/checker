@@ -48,3 +48,7 @@ scheck
 * inc : C++ header files go here
 * src : C++ source files go here
 * tests : tests to check the working of app are stored here
+
+### Word list
+
+The source for word list for building the dictionary was taken from [SCOWL(And Friends) Database](http://wordlist.aspell.net/). It contains a compilation of words of English language in American, British Australian and Canadian dialects.
