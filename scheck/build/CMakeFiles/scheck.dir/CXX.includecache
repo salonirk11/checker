@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/dictionary.h
+string
+-
+set
+-
+fstream
+-
+error.h
+../inc/error.h
+
+../inc/error.h
+stdexcept
+-
+string
+-
+
+../inc/parser.h
+string
+-
+iostream
+-
+sstream
+-
+
+/home/canary/checker/scheck/src/main.cpp
+iostream
+-
+string
+-
+dictionary.h
+/home/canary/checker/scheck/src/dictionary.h
+parser.h
+/home/canary/checker/scheck/src/parser.h
+
