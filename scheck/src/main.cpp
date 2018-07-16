@@ -10,8 +10,8 @@ int main(){
   try{
     cout<<"scheck v0.4"<<endl;
 
-    Dictionary d("data/mydict.dat");
-    ifstream sub( "data/sub1.txt" );
+    Dictionary d("../data/mydict.dat");
+    ifstream sub( "../data/sub1.txt" );
 
     if ( ! sub.is_open() )
         throw ScheckError( "cannot open data/sub1.txt" );
