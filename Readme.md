@@ -52,3 +52,17 @@ scheck
 ### Word list
 
 The source for word list for building the dictionary was taken from [SCOWL(And Friends) Database](http://wordlist.aspell.net/). It contains a compilation of words of English language in American, British Australian and Canadian dialects.
+
+
+### Running the program
+
+Clone this repository into your system. Using a terminal change current working directory to `/scheck`. Then run the following commands: -
+
+
+```
+mkdir build
+cd build
+cmake ..
+make
+./scheck
+```

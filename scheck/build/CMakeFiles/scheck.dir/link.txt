@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/scheck.dir/src/main.cpp.o  -o scheck -rdynamic libparser.a 
