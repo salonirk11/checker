@@ -1,22 +1,28 @@
 #include <iostream>
 #include <string>
 #include "dictionary.h"
+#include "parser.h"
 
 using namespace std;
 
 int main(){
 
   try{
-    cout<<"scheck v0.1"<<endl;
+    cout<<"scheck v0.4"<<endl;
 
-    Dictionary d("data/not_there.dat");
-    string word = "dog";
+    Dictionary d("data/mydict.dat");
+    ifstream sub( "data/sub1.txt" );
 
-    while(getline(cin, word)){
+    if ( ! sub.is_open() )
+        throw ScheckError( "cannot open data/sub1.txt" );
+
+    Parser p( sub );
+    string word;
+    while(( word = p.NextWord() ) != ""){
       if ( d.Check( word ) )
         cout << word << " is OK\n";
       else
-        cout << word << " is misspelt \n";
+        cout << word << " is misspelt at line " << p.LineNo() << "\n";
     }
 
   }
